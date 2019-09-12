@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // omar is the man
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-//Computer Science is fun
-    // Hello omar
-
+    var LabelTitle = "Hello user"
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBAction func mySlider(_ sender: UISlider) {
+    
+        myLabel.text = String(LabelTitle.prefix(Int(sender.value)))
+        
+        print(String(LabelTitle.prefix(Int(sender.value))))
+    }
+    
 }
 
