@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     
         myLabel.text = String(LabelTitle.prefix(Int(sender.value)))
         
-        print(String(LabelTitle.prefix(Int(sender.value))))
     }
-    
 }
 
